@@ -1,0 +1,39 @@
+# os files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# log files
+.tmp/
+tmp/
+*.tmp
+.logs/
+logs/
+*.log
+core
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# local env files
+.env.local
+.env.*.local
+
+# node
+node_modules
+package-lock.json
+/dist

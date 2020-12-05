@@ -1,0 +1,45 @@
+{
+  "name": "ror2-survivor-builder",
+  "version": "0.1.0",
+  "license": "MIT",
+  "homepage": "https://github.com/nurdism/ror2-survivor-builder#readme",
+  "bugs": "https://github.com/nurdism/ror2-survivor-builder/issues",
+  "author": "Nurdism <nurdism.io@gmail.com> (https://nurdism.me/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nurdism/ror2-survivor-builder.git"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "images": "node ./.scripts/images.js",
+    "deploy": "set -e && npm run build && cd dist && git init && git add -A && git commit -m 'deploy' && git push -f https://github.com/nurdism/ror2-survivor-builder.git master:gh-pages"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^3.0.0",
+    "vue-class-component": "^8.0.0-0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "autoprefixer": "^9.8.6",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "node-sass": "^4.12.0",
+    "postcss": "^7.0.35",
+    "prettier": "^1.19.1",
+    "sass-loader": "^8.0.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1",
+    "typescript": "~3.9.3"
+  }
+}
